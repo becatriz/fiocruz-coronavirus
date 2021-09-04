@@ -2,17 +2,26 @@
 
 Este projeto consiste na construção da página home de um site de cursos da fundação FIOCRUZ
 
+
+# Tecnologias utilizadas
+HTML 5<br/>
+CSS com SASS/SCSS<br/>
+JavaScript<br/>
+Webpack<br/>
+Eslint<br/>
+Prettier
+
 # Baixando o Projeto
 
-Clone o projeto com o comando:
+Clone o projeto em sua máquina local com o seguinte comando:
 
 ```js
-git clone https://github.com/projeto
+git clone https://github.com/becatriz/fiocruz-coronavirus.git
 ```
 
 # Executando o projeto
 
-Após baixar o projeto rode o comando:
+Após baixar o projeto, dento da pasta raiz execute o comando:
 
 ```js
 yarn install
@@ -29,3 +38,5 @@ Por fim, para subir o projeto em um servidor local, execute o comando:
 ```js
 yarn start
 ```
+
+Proto, só acesar a url http://localhost:8080/ e será aberta a paǵina home
