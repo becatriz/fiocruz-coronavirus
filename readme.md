@@ -34,7 +34,7 @@ Após baixar o projeto, dento da pasta raiz execute o comando:
 yarn install
 ```
 
-Em seguida rode o próximo para buidar o CSS:
+Em seguida rode o próximo para buildar o CSS:
 
 ```js
 yarn css:scss
