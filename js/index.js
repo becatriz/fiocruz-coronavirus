@@ -1,7 +1,7 @@
 let count = 0
 
 function loadingModal() {
-  document.getElementById("abrirModal").style.visibility = "visible"
+  document.getElementById("openModal").style.visibility = "visible"
 
   document.getElementById("modal-01").innerHTML = `
   <p class="modal__title">Objetivos de aprendizagem</p>
@@ -39,7 +39,7 @@ function loadingModal() {
 function closeModal(modal) {
   count += 1
 
-  document.getElementById("abrirModal").style.visibility = "visible"
+  document.getElementById("openModal").style.visibility = "visible"
 
   const node = document.getElementById(modal)
 
@@ -48,7 +48,7 @@ function closeModal(modal) {
   }
 
   if (count === 4) {
-    document.getElementById("abrirModal").style.visibility = "hidden"
+    document.getElementById("openModal").style.visibility = "hidden"
     history.go(0)
     count = 0
   }
