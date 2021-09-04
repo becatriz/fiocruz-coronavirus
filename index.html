@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="js/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="dist/main.css"
+      media="screen"
+    />
+    <title>Fiocruz</title>
+  </head>
+  <body>
+ 
+    <div class="container">
+      <section id="abrirModal" class="modal" >
+        <div class="container">
+          <div class="row">
+            <div class="col s12 modal__wrapper" id="modal-objective-one">
+              <a
+                style="cursor: pointer"
+                onclick='closeModal("modal-objective-one")'
+                title="Fechar"
+                class="modal__close"
+              >
+                <img src="img/svgs/close.svg" alt="fechar" />
+              </a>
+              <div class="modal__container">
+                <div id="modal-01"></div>
+              </div>
+            </div>
+            <br />
+            <div class="col s12 modal__wrapper" id="modal-menu-one">
+              <a
+                style="cursor: pointer"
+                onclick='closeModal("modal-menu-one")'
+                title="Fechar"
+                class="modal__close"
+              >
+                <img src="img/svgs/close.svg" alt="fechar" />
+              </a>
+              <div class="modal__container">
+                <div id="modal-02"></div>
+              </div>
+            </div>
+            <br />
+            <div class="col s12 modal__wrapper" id="modal-objective-two">
+              <a
+                style="cursor: pointer"
+                onclick='closeModal("modal-objective-two")'
+                title="Fechar"
+                class="modal__close"
+              >
+                <img src="img/svgs/close.svg" alt="fechar" />
+              </a>
+              <div class="modal__container">
+                <div id="modal-03"></div>
+              </div>
+            </div>
+            <br />
+            <div class="col s12 modal__wrapper" id="modal-menu-two">
+              <a
+                style="cursor: pointer"
+                onclick='closeModal("modal-menu-two")'
+                title="Fechar"
+                class="modal__close"
+              >
+                <img src="img/svgs/close.svg" alt="fechar" />
+              </a>
+              <div class="modal__container">
+                <div id="modal-04"></div>
+              </div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </section>
+      <section class="hero">
+        <div class="grid">
+          <div class="row top">
+            <div class="col m6 s12">
+              <img class="hero__img" src="img/png/grades.png" alt="grades" />
+            </div>
+            <div class="col m6 s12">
+              <p class="hero__title">Curso autoinstrucional</p>
+              <p class="hero__subtitle">
+                Enfrentamento da Covid-19 no Sistema Prisional
+              </p>
+              <p class="hero__footnote">Carga Horária: XX horas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="images">
+        <div class="grid">
+          <div class="row center">
+            <div class="col s12">
+              <img
+                class="images__img-right"
+                src="img/svgs/fiocruz-right.svg"
+                alt="fiocruz"
+              />
+              <img
+                class="images__img-left"
+                src="img/svgs/fiocruz-left.svg"
+                alt="fiocruz"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="presentation">
+        <div class="grid">
+          <div class="row">
+            <div class="col s12">
+              <div class="presentation__container">
+                <div class="row middle">
+                  <div class="col m6 s12">
+                    <p class="presentation__title">Apresentação</p>
+                    <p class="presentation__description">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Donec varius laoreet magna. In ac blandit ipsum, nec
+                      volutpat tortor. Maecenas feugiat, elit nec semper tempus,
+                      lorem erat dictum mauris, at vulputate nulla nisl
+                      consequat risus. Quisque mollis massa quis cursus
+                      hendrerit. Proin a porttitor enim, eu consequat ante.
+                      Curabitur ligula mauris, ornare et quam non, blandit
+                      vestibulum lorem. Curabitur in ipsum id ligula bibendum
+                      hendrerit et sit amet ligula. Aenean eu pretium tellus, ac
+                      ornare quam. Proin dictum dignissim ipsum quis tristique.
+                    </p>
+                  </div>
+                  <div class="col m6 s12">
+                    <img
+                      class="presentation__img"
+                      src="img/png/corona.png"
+                      alt="corona"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="unity">
+            <div class="grid">
+              <div class="row">
+                <div class="col s12">
+                  <p class="unity__title">Unidade</p>
+                  <p class="unity__subtitle">
+                    Coronavírus e o Sistema Prisional
+                  </p>
+                  <div class="row center">
+                    <div class="col">
+                      <img
+                        src="img/svgs/menu.svg"
+                        class="unity__icons-icon-menu"
+                        alt="ementa"
+                      />
+                      <p class="unity__description-menu">Ementa</p>
+                    </div>
+                    <div class="col">
+                      <img
+                        src="img/svgs/gps.svg"
+                        class="unity__icons-icon-gps"
+                        alt="objetivo geral"
+                      />
+                      <p class="unity__description">Objetivo Geral</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="unity">
+            <div class="grid">
+              <div class="row">
+                <div class="col s12">
+                  <p class="unity__title">Unidade</p>
+                  <p class="unity__subtitle">
+                    Plano de Contingência no Ambiente Prisional
+                  </p>
+                  <div class="row center">
+                    <div class="col">
+                      <img
+                        src="img/svgs/menu.svg"
+                        class="unity__icons-icon-menu"
+                        alt="ementa"
+                      />
+                      <p class="unity__description-menu">Ementa</p>
+                    </div>
+                    <div class="col">
+                      <img
+                        src="img/svgs/gps.svg"
+                        class="unity__icons-icon-gps"
+                        alt="objetivo geral"
+                      />
+                      <p class="unity__description">Objetivo Geral</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section class="init">
+        <div class="grid">
+          <div class="row center">
+            <div class="col s12">
+              <a
+                href="#abrirModal"
+                class="init__button"
+                onclick="loadingModal()"
+                type="button"
+                >Vamos começar?</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__border"></div>
+      </footer>
+    </div>
+  </body>
+</html>

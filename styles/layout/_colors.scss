@@ -1,0 +1,37 @@
+$primary: (
+  "base": var(--primary-color-base),
+  "gradient": var(--primary-color-gradient),
+  "50": var(--primary-color-50),
+  "100": var(--primary-color-100),
+  "800": var(--primary-color-800),
+  "900": var(--primary-color-900)
+);
+
+$grey: (
+  "base": #333333,
+  "gradient": linear-gradient(270deg, #fafafa 0%, #eeeeee 100%),
+  
+);
+
+$neutral: (
+  "white": #E5E5E5,
+  "black": #000000
+);
+
+$colors: (
+  "primary": $primary,
+  "grey": $grey,
+  "neutral": $neutral,
+) !default;
+
+
+@function color($color, $type) {
+    @if map-has-key($colors, $color) {
+      $curr_color: map-get($colors, $color);
+      @if map-has-key($curr_color, $type) {
+        @return map-get($curr_color, $type);
+      }
+    }
+    @warn "Color `#{$color}` - `#{$type}` not found in $colors.";
+    @return null;
+  }

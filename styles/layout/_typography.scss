@@ -1,0 +1,100 @@
+$base-size: 16;
+
+@function size($target, $context: $base-size) {
+  @return ($target / $context) * 1em;
+}
+
+%line-height-default {
+  line-height: 1.15;
+}
+
+%font-family-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+%underline {
+  text-decoration-line: underline;
+}
+
+%uppercase {
+  text-transform: uppercase;
+}
+
+%ellipsis-text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+$fontWeight: 400;
+
+@while $fontWeight <= 900 {
+  %font-weight-#{$fontWeight} {
+    font-weight: $fontWeight;
+  }
+
+  $fontWeight: $fontWeight + 100;
+}
+
+$fontSize: 10;
+
+@while $fontSize <= 60{
+  %font-size-#{$fontSize} {
+    font-size: size($fontSize);
+  }
+
+  $fontSize: $fontSize + 1;
+}
+
+$lineHeight: 100;
+
+@while $lineHeight <= 160 {
+  %line-height-#{$lineHeight} {
+    line-height: $lineHeight * 1%;
+  }
+
+  $lineHeight: $lineHeight + 10;
+}
+
+
+/** Heading **/
+%heading-rb-48-900 {
+    @extend %font-family-roboto, %font-weight-900, %font-size-48, %line-height-120;
+  }
+%heading-rb-18-400 {
+  @extend %font-family-roboto, %font-weight-400, %font-size-18, %line-height-140, %uppercase;
+}
+%heading-rb-24-700 {
+  @extend %font-family-roboto, %font-weight-700, %font-size-24, %line-height-140;
+}
+
+
+/** Paragraph **/
+
+%paragraph-rb-12-500 {
+  @extend %font-family-roboto, %font-weight-500, %font-size-12, %line-height-160;
+}
+%paragraph-rb-16-400 {
+  @extend %font-family-roboto, %font-weight-400, %font-size-16, %line-height-160, %uppercase;
+}
+%paragraph-rb-14-400 {
+  @extend %font-family-roboto, %font-weight-400, %font-size-14, %line-height-160;
+}
+%paragraph-rb-12-400 {
+    @extend %font-family-roboto, %font-weight-400, %font-size-12, %line-height-160;
+  }
+%paragraph-rb-12-500 {
+  @extend %font-family-roboto, %font-weight-500, %font-size-12, %line-height-160;
+}
+%paragraph-rb-12-600 {
+  @extend %font-family-roboto, %font-weight-600, %font-size-12, %line-height-160;
+}
+
+/** Labels **/
+%label-rb-12-400 {
+    @extend %font-family-roboto, %font-weight-400, %font-size-12, %uppercase, %line-height-default;
+  }
+
+
+
+
