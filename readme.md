@@ -3,10 +3,10 @@
 Este projeto consiste na construção da página home de um site de cursos da fundação FIOCRUZ
 
 <p align="center"> 
-<img src="./img/github/home.png" width="350px"/>
+<img src="./img/github/home.png" width="550px"/>
 </p>
 <p align="center"> 
-<img src="./img/github/modal.png"  width="350px"/>
+<img src="./img/github/modal.png"  width="550px"/>
 </p>
 
 # Tecnologias utilizadas
