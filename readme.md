@@ -2,8 +2,11 @@
 
 Este projeto consiste na construção da página home de um site de cursos da fundação FIOCRUZ
 
+<img src="./img/github/home.png" />
+<img src="./img/github/modal.png" />
 
 # Tecnologias utilizadas
+
 HTML 5<br/>
 CSS com SASS/SCSS<br/>
 JavaScript<br/>
